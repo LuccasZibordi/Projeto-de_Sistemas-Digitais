@@ -1,10 +1,7 @@
 # Projeto-de_Sistemas-Digitais
 
-Repositório criado com os projetos desenvolvidos na Universidade PUC-Campinas no curso de Engenharia de Computação na matéria "Projetos de sistemas digitais".
+Repositório criado com os projetos desenvolvidos em linguagem VHDL nos laboratórios da Universidade PUC-Campinas no curso de Engenharia de Computação na matéria "Projetos de sistemas digitais".
 
-rojeto de Sistemas Digitais
-
-Repositório com os laboratórios realizados na disciplina Projeto de Sistemas Digitais da PUC Campinas.
 
 ## Estrutura do Repositório:
 

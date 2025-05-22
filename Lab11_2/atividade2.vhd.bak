@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.pacoteffA.all;
+
+entity atividade2 is
+port (        D      : IN  STD_LOGIC;
+        Resetn : IN  STD_LOGIC;
+        Clock  : IN  STD_LOGIC;
+        Q      : OUT STD_LOGIC
+    );
+end atividade2;
+
+architecture behavior of atividade2 is
+
+begin
+
+assincrono: flipflopR port map (D, Resetn, Clock, Q);
+
+end behavior;

@@ -1,0 +1,30 @@
+|atividade12
+D => late:latchd.D
+D => flipflopsubidaD:FlipFlopprocess.D
+D => flipflopdescidaD:Flipflopwaituntil.D
+clock => late:latchd.CLOCK
+clock => flipflopsubidaD:FlipFlopprocess.Clock
+clock => flipflopdescidaD:Flipflopwaituntil.Clock
+Q[0] <= late:latchd.Q
+Q[1] <= flipflopsubidaD:FlipFlopprocess.Q
+Q[2] <= flipflopdescidaD:Flipflopwaituntil.Q
+
+
+|atividade12|late:latchd
+D => Q$latch.DATAIN
+CLOCK => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atividade12|flipflopsubidaD:FlipFlopprocess
+D => Q~reg0.DATAIN
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atividade12|flipflopdescidaD:Flipflopwaituntil
+D => Q~reg0.DATAIN
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

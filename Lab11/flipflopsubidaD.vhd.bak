@@ -1,0 +1,17 @@
+Library ieee;
+use iee.std_logic_1164.all;
+
+entity flipflopsubidaD is
+port( D, Clock: in std_logic;
+      Q       : out std_logic);
+		
+end flipflopsubidaD;
+
+architecture behavior of flipflopsubidaD
+begin
+	process
+		begin
+			wait until Clock'event and Clock ='1';
+				Q<=D;
+	end process;
+end behevior;

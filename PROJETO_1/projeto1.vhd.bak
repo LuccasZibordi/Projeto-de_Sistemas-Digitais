@@ -1,0 +1,39 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.pacotao,all;
+
+entity projeto1 is
+port( sw: in std_logic_vector (10 downto 3);
+		LEDR: out std_logic_vector (5 downto 1);
+		HEX0: out std_logic_vector (6 downto 0);
+		HEX1: out std_logic_vector (6 downto 0);
+		HEX2: out std_logic_vector (6 downto 0);
+		HEX4: out std_logic_vector (6 downto 0)
+	  );
+end projeto1;
+
+architecture ALU of projeto1 is
+signal b_2: std_logic_vector (3 downto 0); -- sinal que recebe o inverso de B para ser somado a 1
+signal binverso: std_logic_vector (3 downto 0); -- sinal para guardar o valor inverso +1 da entrada B--
+signal cout_sub: std_logic; -- cout da subtração --
+signal cout_invb: std_logic; -- cout da inversao e soma (1) do B--
+signal resultsub: std_logic_vector (3 downto 0);  -- resultado da subtração --
+signal resultadd: std_logic_vector (3 downto 0);  -- resultado da adição--
+signal cout_add: std_logic; -- cout da soma dos 4 das entradas A e B--
+
+-- subtração ( realizada em complemento de 2, A+(B'+1))--
+
+b_2<= not sw(6 downto 1); -- b_2 recebe o inverso de B --
+
+
+invertendo_e_somandoum: somador4	port map (b_2,'1','0',binverso,cout);
+subtracao: somador4 port map (sw(10 downto 7),binverso,'0',resultsub,cout_sub);
+-- fim da subtração--
+
+-- soma de 2 números de 4 bits--
+
+somando: somador port map( sw(10 downto 7), sw(6 downto 1),'0',resultadd,cout_add);
+
+-- multiplicação--
+multiplicando: 
+

@@ -1,0 +1,149 @@
+|atividade1
+sw[0] => dec416:placa.a[0]
+sw[1] => dec416:placa.a[1]
+sw[2] => dec416:placa.b[0]
+sw[3] => dec416:placa.b[1]
+sw[4] => dec416:placa.en
+LEDR[0] << dec416:placa.f[0]
+LEDR[1] << dec416:placa.f[1]
+LEDR[2] << dec416:placa.f[2]
+LEDR[3] << dec416:placa.f[3]
+LEDR[4] << dec416:placa.f[4]
+LEDR[5] << dec416:placa.f[5]
+LEDR[6] << dec416:placa.f[6]
+LEDR[7] << dec416:placa.f[7]
+LEDR[8] << dec416:placa.f[8]
+LEDR[9] << dec416:placa.f[9]
+LEDR[10] << dec416:placa.f[10]
+LEDR[11] << dec416:placa.f[11]
+LEDR[12] << dec416:placa.f[12]
+LEDR[13] << dec416:placa.f[13]
+LEDR[14] << dec416:placa.f[14]
+LEDR[15] << dec416:placa.f[15]
+
+
+|atividade1|dec416:placa
+a[0] => dec24:decMaster.a
+a[1] => dec24:decslave1.a
+a[1] => dec24:decslave2.a
+a[1] => dec24:decslave3.a
+a[1] => dec24:decslave4.a
+b[0] => dec24:decMaster.b
+b[1] => dec24:decslave1.b
+b[1] => dec24:decslave2.b
+b[1] => dec24:decslave3.b
+b[1] => dec24:decslave4.b
+en => dec24:decMaster.en
+f[0] <= dec24:decslave1.f[0]
+f[1] <= dec24:decslave1.f[1]
+f[2] <= dec24:decslave1.f[2]
+f[3] <= dec24:decslave1.f[3]
+f[4] <= dec24:decslave2.f[0]
+f[5] <= dec24:decslave2.f[1]
+f[6] <= dec24:decslave2.f[2]
+f[7] <= dec24:decslave2.f[3]
+f[8] <= dec24:decslave3.f[0]
+f[9] <= dec24:decslave3.f[1]
+f[10] <= dec24:decslave3.f[2]
+f[11] <= dec24:decslave3.f[3]
+f[12] <= dec24:decslave4.f[0]
+f[13] <= dec24:decslave4.f[1]
+f[14] <= dec24:decslave4.f[2]
+f[15] <= dec24:decslave4.f[3]
+
+
+|atividade1|dec416:placa|dec24:decMaster
+a => f.IN0
+a => f.IN0
+a => f.IN0
+a => f.IN0
+b => f.IN1
+b => f.IN1
+b => f.IN1
+b => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atividade1|dec416:placa|dec24:decslave1
+a => f.IN0
+a => f.IN0
+a => f.IN0
+a => f.IN0
+b => f.IN1
+b => f.IN1
+b => f.IN1
+b => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atividade1|dec416:placa|dec24:decslave2
+a => f.IN0
+a => f.IN0
+a => f.IN0
+a => f.IN0
+b => f.IN1
+b => f.IN1
+b => f.IN1
+b => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atividade1|dec416:placa|dec24:decslave3
+a => f.IN0
+a => f.IN0
+a => f.IN0
+a => f.IN0
+b => f.IN1
+b => f.IN1
+b => f.IN1
+b => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|atividade1|dec416:placa|dec24:decslave4
+a => f.IN0
+a => f.IN0
+a => f.IN0
+a => f.IN0
+b => f.IN1
+b => f.IN1
+b => f.IN1
+b => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+en => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

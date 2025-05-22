@@ -1,0 +1,242 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/simulation/modelsim
+Ecomparador
+Z1 w1747770231
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+R0
+Z4 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/comparador.vhd
+Z5 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/comparador.vhd
+l0
+L5 1
+V^6ZL^A7mXJzUHS6QY?`Gf0
+!s100 j0lnbER;UoJHMn`V^;cH30
+Z6 OV;C;2020.1;71
+33
+Z7 !s110 1747770254
+!i10b 1
+Z8 !s108 1747770254.000000
+Z9 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/comparador.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/comparador.vhd|
+!i113 1
+Z10 o-2008 -work work
+Z11 tExplicit 1 CvgOpt 0
+Acompare
+R2
+R3
+DEx4 work 10 comparador 0 22 ^6ZL^A7mXJzUHS6QY?`Gf0
+!i122 5
+l14
+L10 16
+V@737i3:U6b5Cm8N?PR2Nk0
+!s100 ZZ[iJ4z@BZfaLR0>>MTJS3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/comparador.vhd|
+!i113 1
+R10
+R11
+Ecompleto
+Z13 w1747679460
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somap.vhd
+Z15 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somap.vhd
+l0
+L4 1
+Vo`mk:nHTdQgm6Oa7b6j``3
+!s100 g2Oeh3>3J^Rg`_HmckV2E2
+R6
+33
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somap.vhd|
+Z17 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somap.vhd|
+!i113 1
+R10
+R11
+Afuncionamento
+R2
+R3
+DEx4 work 8 completo 0 22 o`mk:nHTdQgm6Oa7b6j``3
+!i122 1
+l15
+L14 5
+VDh6Mie[1g:[48QMcl:54E3
+!s100 c^Qzb_=oCP<9zgF5n56;Z2
+R6
+33
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R10
+R11
+Emult
+Z18 w1747679862
+Z19 DPx4 work 7 pacotao 0 22 6X<L>18OUlWzFdB[gZIZh0
+R2
+R3
+!i122 2
+R0
+Z20 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/multiplicador.vhd
+Z21 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/multiplicador.vhd
+l0
+L5 1
+Vo[g2[EDDbfa=W7c<f;EY00
+!s100 >5MDU0jjg>EJ;A3ez]SF01
+R6
+33
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/multiplicador.vhd|
+Z23 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/multiplicador.vhd|
+!i113 1
+R10
+R11
+Amultiplica
+R19
+R2
+R3
+DEx4 work 4 mult 0 22 o[g2[EDDbfa=W7c<f;EY00
+!i122 2
+l20
+L14 36
+Vd_CK_WJe7gb]PmQhL[^Ta1
+!s100 1>CN]1BA4M=Rm`E^VoAlJ2
+R6
+33
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R10
+R11
+Ppacotao
+R2
+R3
+!i122 0
+w1747679427
+R0
+8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/pacotao.vhd
+FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/pacotao.vhd
+l0
+L4 1
+V6X<L>18OUlWzFdB[gZIZh0
+!s100 _eH?aeS<Hi3T`5dnC6i7=0
+R6
+33
+!s110 1747770253
+!i10b 1
+!s108 1747770253.000000
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/pacotao.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/pacotao.vhd|
+!i113 1
+R10
+R11
+Eprojeto1
+Z24 w1747769066
+R19
+R2
+R3
+!i122 3
+R0
+Z25 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/projeto1.vhd
+Z26 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/projeto1.vhd
+l0
+L5 1
+VFKRNoNDKzRW0Wgo=ikkmJ2
+!s100 D0C;K41?X4AHZeK?M06h@1
+R6
+33
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/projeto1.vhd|
+Z28 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/projeto1.vhd|
+!i113 1
+R10
+R11
+Aalu
+R19
+R2
+R3
+DEx4 work 8 projeto1 0 22 FKRNoNDKzRW0Wgo=ikkmJ2
+!i122 3
+l52
+L15 191
+V9hUdCDf47=[5z0_jdZ:1>3
+!s100 dX7UU:Qe;cN@=Fom?U4BP1
+R6
+33
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R10
+R11
+Esomador4
+Z29 w1747679912
+R2
+R3
+!i122 4
+R0
+Z30 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somador4bits.vhd
+Z31 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somador4bits.vhd
+l0
+L5 1
+Vc>@oefY_>F>44^56NcPeb3
+!s100 T:DC>o;CX99KS?i`b;k?E1
+R6
+33
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somador4bits.vhd|
+Z33 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somador4bits.vhd|
+!i113 1
+R10
+R11
+Asoma
+R2
+R3
+DEx4 work 8 somador4 0 22 c>@oefY_>F>44^56NcPeb3
+!i122 4
+l19
+L15 23
+V;E5j7E^`K94FL=57k2Fng3
+!s100 EjIa[>RXz=RRYU?WBGz^K2
+R6
+33
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R10
+R11

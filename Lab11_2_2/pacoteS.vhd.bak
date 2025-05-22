@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+package pacoteS is
+
+component flipflopS IS
+    PORT (
+        D      : IN  STD_LOGIC;
+        Resetn : IN  STD_LOGIC;
+        Clock  : IN  STD_LOGIC;
+        Q      : OUT STD_LOGIC
+    );
+END component;
+
+end package;

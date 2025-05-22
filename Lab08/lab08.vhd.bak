@@ -1,0 +1,105 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use work.somap_pkg.all;
+
+entity multiplicador is
+  Port (
+    SW      : in std_logic_vector(3 downto 0);
+    produto : out std_logic_vector(3 downto 0);
+	 HEX3: out std_logic_vector(0 to 0);
+	 HEX5: out std_logic_vector(0 to 0);
+	 HEX7: out std_logic_vector(0 to 0)
+	 
+  );
+end multiplicador;
+
+architecture multiplicacao of multiplicador is
+  signal a: std_logic_vector(1 downto 0);
+  signal b: std_logic_vector(1 downto 0);
+  signal s: std_logic_vector(2 downto 0);
+  signal c: std_logic;
+  signal p: std_logic_vector(3 downto 0);
+  signal cin: std_logic := '0'; 
+
+begin
+
+  p(0) <= SW(2) and SW(0);
+  s(0) <= SW(3) and SW(0);
+  s(1) <= SW(2) and SW(1);
+  somador1: somap port map (
+    x => s(0),
+    y => s(1),
+    cin => cin,
+    soma => p(1),
+    cout => c
+  );
+  s(2) <= SW(3) and SW(1);
+  somador2: somap port map (
+    x => s(2),
+    y => '0',
+    cin => c,
+    soma => p(2),
+    cout => p(3)
+  );
+  
+  produto <= p;
+  a <= SW(3 downto 2);
+  b <= SW(1 downto 0);
+  
+  with b select 
+		HEX3 <=  "0000001" when "0000",
+					"1001111" when "0001",
+					"0010010" when "0010",
+					"0000110" when "0011",
+					"1001100" when "0100",
+					"0100100" when "0101",
+					"0100000" when "0110",
+					"0001111" when "0111",
+					"0000000" when "1000",
+					"0001100" when "1001",
+					"0001000" when "1010",
+					"1100000" when "1011",
+					"0110001" when "1100",
+					"1000010" when "1101",
+					"0110000" when "1110",
+					"0111000" when "1111",
+					"1111111" when others;
+					
+   with a select 
+		HEX5 <=  "0000001" when "0000",
+					"1001111" when "0001",
+					"0010010" when "0010",
+					"0000110" when "0011",
+					"1001100" when "0100",
+					"0100100" when "0101",
+					"0100000" when "0110",
+					"0001111" when "0111",
+					"0000000" when "1000",
+					"0001100" when "1001",
+					"0001000" when "1010",
+					"1100000" when "1011",
+					"0110001" when "1100",
+					"1000010" when "1101",
+					"0110000" when "1110",
+					"0111000" when "1111",
+					"1111111" when others;
+  
+  with produto select 
+		HEX7 <=  "0000001" when "0000",
+					"1001111" when "0001",
+					"0010010" when "0010",
+					"0000110" when "0011",
+					"1001100" when "0100",
+					"0100100" when "0101",
+					"0100000" when "0110",
+					"0001111" when "0111",
+					"0000000" when "1000",
+					"0001100" when "1001",
+					"0001000" when "1010",
+					"1100000" when "1011",
+					"0110001" when "1100",
+					"1000010" when "1101",
+					"0110000" when "1110",
+					"0111000" when "1111",
+					"1111111" when others;
+end multiplicacao;

@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package pkg is
+
+component dec24 is
+port( a,b,en: in std_logic;
+		f: out std_logic_vector(3 downto 0)
+		);
+end component;
+
+end package;

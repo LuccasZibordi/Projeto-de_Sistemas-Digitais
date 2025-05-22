@@ -1,0 +1,199 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/simulation/modelsim
+Eatividade1
+Z1 w1747850947
+Z2 DPx4 work 10 pacotedeff 0 22 D:0;EK[A0]AA2K1JA<hj;3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+R0
+Z5 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Atividade1.vhd
+Z6 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Atividade1.vhd
+l0
+L5 1
+V2_9@076l2>eVi:1UcXG4o0
+!s100 VN7gC39lEiF=K?<l6j5EQ0
+Z7 OV;C;2020.1;71
+33
+Z8 !s110 1747851844
+!i10b 1
+Z9 !s108 1747851844.000000
+Z10 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Atividade1.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Atividade1.vhd|
+!i113 1
+Z11 o-2008 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 10 atividade1 0 22 2_9@076l2>eVi:1UcXG4o0
+!i122 4
+l13
+L11 9
+VFGNNiKo]TD?F4SIkknEin3
+!s100 hkPYc2Rc3=mPRSzGfP?`W1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Atividade1.vhd|
+!i113 1
+R11
+R12
+Eflipflopdescida
+Z14 w1747849784
+R3
+R4
+!i122 3
+R0
+Z15 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/flipflopdescida.vhd
+Z16 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/flipflopdescida.vhd
+l0
+L4 1
+VO>Bn^VC=C8L1<gXAE_[<52
+!s100 PEeJ42JfWjIeKF12L06cb1
+R7
+33
+R8
+!i10b 1
+Z17 !s108 1747851843.000000
+Z18 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/flipflopdescida.vhd|
+Z19 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/flipflopdescida.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R3
+R4
+DEx4 work 15 flipflopdescida 0 22 O>Bn^VC=C8L1<gXAE_[<52
+!i122 3
+l11
+Z20 L10 9
+V<2KS2NBiLZREd3J]jXBI_1
+!s100 0]@:;1g4?iU]?AH0POCz`3
+R7
+33
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Eflipflopsubida
+Z21 w1747849779
+R3
+R4
+!i122 1
+R0
+Z22 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/flipflopsubida.vhd
+Z23 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/flipflopsubida.vhd
+l0
+L4 1
+V]WK2zMfCj3a5d>LV<C3JI3
+!s100 DNfZ7a`z3e2fhPzD@]Bg^0
+R7
+33
+Z24 !s110 1747851843
+!i10b 1
+R17
+Z25 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/flipflopsubida.vhd|
+Z26 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/flipflopsubida.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R3
+R4
+DEx4 work 14 flipflopsubida 0 22 ]WK2zMfCj3a5d>LV<C3JI3
+!i122 1
+l11
+R20
+Va<>e[GknhC?<mFjSZV^Ef3
+!s100 ?9PF5f9@<N2MKznGVJ_Og1
+R7
+33
+R24
+!i10b 1
+R17
+R25
+R26
+!i113 1
+R11
+R12
+Elate
+Z27 w1747850968
+R3
+R4
+!i122 0
+R0
+Z28 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/latchd.vhd
+Z29 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/latchd.vhd
+l0
+L4 1
+VhVzEmeU:7WjD7SF>kU?8W2
+!s100 K>U1BbJlO5YS?=G7g=PGF0
+R7
+33
+R24
+!i10b 1
+R17
+Z30 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/latchd.vhd|
+Z31 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/latchd.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R3
+R4
+DEx4 work 4 late 0 22 hVzEmeU:7WjD7SF>kU?8W2
+!i122 0
+l13
+L12 11
+VDW3[K40JKKACK=mfUcQ^Q3
+!s100 oVN7YD^]9oA26chZm^IUk0
+R7
+33
+R24
+!i10b 1
+R17
+R30
+R31
+!i113 1
+R11
+R12
+Ppacotedeff
+R3
+R4
+!i122 2
+w1747851638
+R0
+8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Pacotedeff.vhd
+FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Pacotedeff.vhd
+l0
+L4 1
+VD:0;EK[A0]AA2K1JA<hj;3
+!s100 _l`>R==M?fE^][STGNE5J1
+R7
+33
+R24
+!i10b 1
+R17
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Pacotedeff.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11/Pacotedeff.vhd|
+!i113 1
+R11
+R12

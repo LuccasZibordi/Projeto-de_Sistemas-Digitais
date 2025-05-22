@@ -1,0 +1,52 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab07/simulation/modelsim
+Elab07
+Z1 w1744218832
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab07/Lab07.vhd
+Z5 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab07/Lab07.vhd
+l0
+L5 1
+VoIfN4`;6PW95VZzm<NTjN1
+!s100 ZUn9cVAgobBYZ0RG1[FOl0
+Z6 OV;C;2020.1;71
+33
+Z7 !s110 1744219363
+!i10b 1
+Z8 !s108 1744219362.000000
+Z9 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab07/Lab07.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab07/Lab07.vhd|
+!i113 1
+Z10 o-2008 -work work
+Z11 tExplicit 1 CvgOpt 0
+Asomadores
+R2
+R3
+DEx4 work 5 lab07 0 22 oIfN4`;6PW95VZzm<NTjN1
+!i122 0
+l24
+L16 84
+VAmbDiCT=njGFLd>lA;c;h3
+!s100 OC0E1lYLJ;9:55KV_H6oc0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab07/Lab07.vhd|
+!i113 1
+R10
+R11

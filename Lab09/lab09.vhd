@@ -1,0 +1,62 @@
+LIBRARY ieee;
+use ieee.std_logic_1164.all;
+use work.pacotao.all;
+
+entity lab09 is
+port( sw: in std_logic_vector (10 downto 3);
+	HEX1,HEX2: out std_logic_vector (0 to 6);
+	LEDR: out std_logic_vector (5 downto 3)
+	);
+end lab09;
+architecture comparacao of lab09 is
+	signal a,b: std_logic_vector (3 downto 0);
+	signal gtr,lst,equ: std_logic;
+
+begin
+a<= sw(10 downto 7);
+b<= sw(6 downto 3);
+
+boracomparar: comparador port map
+(a,b,equ,gtr,lst);
+
+LEDR(3) <= equ;
+LEDR(4) <= gtr;
+LEDR(5) <= lst;
+
+with b select 
+HEX1 <=  "0000001" when "0000",
+					"1001111" when "0001",
+					"0010010" when "0010",
+					"0000110" when "0011",
+					"1001100" when "0100",
+					"0100100" when "0101",
+					"0100000" when "0110",
+					"0001111" when "0111",
+					"0000000" when "1000",
+					"0001100" when "1001",
+					"0001000" when "1010",
+					"1100000" when "1011",
+					"0110001" when "1100",
+					"1000010" when "1101",
+					"0110000" when "1110",
+					"0111000" when "1111",
+					"1111111" when others;
+with a select 
+HEX2 <=  "0000001" when "0000",
+					"1001111" when "0001",
+					"0010010" when "0010",
+					"0000110" when "0011",
+					"1001100" when "0100",
+					"0100100" when "0101",
+					"0100000" when "0110",
+					"0001111" when "0111",
+					"0000000" when "1000",
+					"0001100" when "1001",
+					"0001000" when "1010",
+					"1100000" when "1011",
+					"0110001" when "1100",
+					"1000010" when "1101",
+					"0110000" when "1110",
+					"0111000" when "1111",
+					"1111111" when others;
+end architecture;

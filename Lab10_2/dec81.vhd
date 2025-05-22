@@ -1,0 +1,9 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.pkg.all
+
+entity dec416 is
+port( a,b,en: in std_logic;
+		f: out std_logic_vector(3 donto 0)
+		);
+end dec24;

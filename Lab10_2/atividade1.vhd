@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.paquote.all;
+
+entity atividade1 is
+	port(
+			sw: in std_logic_vector(4 downto 0);
+			LEDR: out std_logic_vector (15 downto 0)
+		  );
+
+end atividade1;
+
+architecture decnaplaca of atividade1 is
+
+begin
+
+placa: dec416 port map (sw(1 downto 0),sw(3 downto 2),sw(4),LEDR);
+
+end decnaplaca;

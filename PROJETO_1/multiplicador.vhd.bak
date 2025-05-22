@@ -1,0 +1,43 @@
+ibrary IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use work.pacote.all;
+
+entity lab08 is
+Port (
+SW      : in std_logic_vector(3 downto 0);
+produto : out std_logic_vector(3 downto 0);
+
+);
+end lab08;
+
+architecture multiplica of lab08 is
+signal a: std_logic_vector(1 downto 0);
+signal b: std_logic_vector(1 downto 0);
+signal s: std_logic_vector(2 downto 0);
+signal c: std_logic;
+signal p: std_logic_vector(3 downto 0);
+signal cin: std_logic := '0';
+
+begin
+
+p(0) <= SW(2) and SW(0);
+s(0) <= SW(3) and SW(0);
+s(1) <= SW(2) and SW(1);
+somador1: parcial port map (
+x => s(0),
+y => s(1),
+cin => cin,
+soma => p(1),
+cout => c
+);
+s(2) <= SW(3) and SW(1);
+somador2: parcial port map (
+x => s(2),
+y => '0',--- o cin tem q ser zero no somador
+cin => c,
+soma => p(2),
+cout => p(3)
+);
+
+produto <= p;
+end multiplica;

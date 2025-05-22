@@ -1,0 +1,14 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+package somap_pkg is
+  component somap
+    Port (
+      a  : in std_logic;
+      b  : in std_logic;
+      cin: in std_logic;
+      soma: out std_logic;
+      cout: out std_logic
+    );
+  end component;
+end package somap_pkg;

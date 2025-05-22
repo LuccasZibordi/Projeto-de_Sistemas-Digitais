@@ -1,0 +1,92 @@
+# Reading pref.tcl
+# do Lab10_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Users/lucca/Projetos 3 semestre/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/mux21.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:36 on May 14,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/mux21.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity doisparaum
+# -- Compiling architecture mux of doisparaum
+# End time: 13:15:36 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/pakote.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:37 on May 14,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/pakote.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package pakote
+# End time: 13:15:37 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/pacote.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:37 on May 14,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/pacote.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package pacote
+# End time: 13:15:37 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/oitoparaum.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:37 on May 14,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/oitoparaum.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package pakote
+# -- Compiling entity oitoparaum
+# -- Compiling architecture M_U_X of oitoparaum
+# End time: 13:15:37 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/Lab10.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:37 on May 14,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab10/Lab10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package pacote
+# -- Compiling entity Lab10
+# -- Compiling architecture muxnaplaca of Lab10
+# End time: 13:15:37 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.doisparaum
+# vsim work.doisparaum 
+# Start time: 13:21:19 on May 14,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.doisparaum(mux)
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 200ps sim:/doisparaum/s
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 100ps -step 1 -repeat 1 -starttime 0ps -endtime 200ps sim:/doisparaum/a
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 100ps -step 1 -repeat 1 -starttime 0ps -endtime 200ps sim:/doisparaum/b
+add wave -position end  sim:/doisparaum/f
+wave modify -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 100ps -step 1 -repeat 1 -starttime 200ps -endtime 400ps Edit:/doisparaum/a
+wave modify -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 100ps -step 1 -repeat 1 -starttime 200ps -endtime 400ps Edit:/doisparaum/b
+wave modify -driver freeze -pattern constant -value 1 -starttime 200ps -endtime 400ps Edit:/doisparaum/s
+run
+restart
+wave modify -driver freeze -pattern counter -startvalue 1 -endvalue 0 -type Range -direction Down -period 100ps -step 1 -repeat 1 -starttime 200ps -endtime 400ps Edit:/doisparaum/a
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# End time: 13:57:21 on May 14,2025, Elapsed time: 0:36:02
+# Errors: 0, Warnings: 0

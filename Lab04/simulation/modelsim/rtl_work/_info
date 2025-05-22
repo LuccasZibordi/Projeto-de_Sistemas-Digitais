@@ -1,0 +1,94 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/simulation/modelsim
+Elab04_tb
+Z1 w1742252016
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z4 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04_tb.vhd
+Z5 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04_tb.vhd
+l0
+L4 1
+VFX8H8lAA=EL;^d7nOiYi^0
+!s100 ^fhDJ:dn[ijF=>>c0:@[O0
+Z6 OV;C;2020.1;71
+33
+Z7 !s110 1742401631
+!i10b 1
+Z8 !s108 1742401631.000000
+Z9 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04_tb.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04_tb.vhd|
+!i113 1
+Z10 o-2008 -work work
+Z11 tExplicit 1 CvgOpt 0
+Atb
+Z12 DEx4 work 6 lab_04 0 22 C:SHR95inS7Y=zBDUZK@l1
+R2
+R3
+DEx4 work 8 lab04_tb 0 22 FX8H8lAA=EL;^d7nOiYi^0
+!i122 2
+l11
+L7 7
+VlZJ3>9`<HFnBfeGF[_RNN1
+!s100 0EY`F[0QTbLizTiDTODSJ3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+Z13 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04_tb.vhd|
+!i113 1
+R10
+R11
+Elab_04
+Z14 w1742247226
+R2
+R3
+!i122 1
+R0
+Z15 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04.vhd
+Z16 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04.vhd
+l0
+L4 1
+VC:SHR95inS7Y=zBDUZK@l1
+!s100 @`D5NmeC?8nlFd^OcZNUU3
+R6
+33
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04.vhd|
+Z18 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab04/Lab4_1/Lab_04.vhd|
+!i113 1
+R10
+R11
+Asoma
+R2
+R3
+R12
+!i122 1
+l12
+L11 7
+VFonRnG5c>mnjf0:?9z25L1
+!s100 VBJjkEZeDj7;JViY4_W2B3
+R6
+33
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R10
+R11

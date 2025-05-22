@@ -1,0 +1,19 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use work.Pacoteffd.all;
+
+entity Atividade1_2 is
+port( D, clock: in std_logic;
+        Q: out std_logic_vector (2 downto 0));
+        
+end Atividade1_2;
+
+architecture behavior of Atividade1_2 is
+
+begin
+
+latchd: late port map ( D, clock, q(0));
+FlipFlopprocess: flipflopsubidaD port map ( D, clock, Q(1));
+Flipflopwaituntil: flipflopdescidaD port map ( D, clock, Q(2));
+
+end behavior;

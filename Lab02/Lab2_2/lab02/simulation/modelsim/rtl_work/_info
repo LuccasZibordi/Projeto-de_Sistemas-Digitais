@@ -1,0 +1,48 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lucca/Projetos 3 semestre/lab02/simulation/modelsim
+Elab02
+Z1 w1740593023
+!i122 0
+R0
+Z2 8C:/Users/lucca/Projetos 3 semestre/lab02/lab02.vhd
+Z3 FC:/Users/lucca/Projetos 3 semestre/lab02/lab02.vhd
+l0
+L3 1
+ViD==JdX4PBh_6FQQ`JN;]3
+!s100 LDG;QEL<M9KUYNE2lmAPX2
+Z4 OV;C;2020.1;71
+31
+Z5 !s110 1740593075
+!i10b 1
+Z6 !s108 1740593075.000000
+Z7 !s90 -reportprogress|300|-93|-work|work|C:/Users/lucca/Projetos 3 semestre/lab02/lab02.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/lab02/lab02.vhd|
+!i113 1
+Z8 o-93 -work work
+Z9 tExplicit 1 CvgOpt 0
+Alogica
+DEx4 work 5 lab02 0 22 iD==JdX4PBh_6FQQ`JN;]3
+!i122 0
+l9
+L8 5
+V0P_L2a5QD4D1S;1PK3V8T3
+!s100 m9EL:4:54lQWCzRfeX]_e1
+R4
+31
+R5
+!i10b 1
+R6
+R7
+Z10 !s107 C:/Users/lucca/Projetos 3 semestre/lab02/lab02.vhd|
+!i113 1
+R8
+R9

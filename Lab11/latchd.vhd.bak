@@ -1,0 +1,18 @@
+Library ieee;
+use iee.std_logic_1164.all;
+
+entity lacth is
+port ( D, Clk : in std_logic;
+			 Q  : out std_logic);
+			 
+end latch;
+
+architecture behavior of latch is
+begin
+process (D,Clk)
+begin
+if Clk =  '1' then 
+q<=D;
+end if;
+end process;
+end behavior;

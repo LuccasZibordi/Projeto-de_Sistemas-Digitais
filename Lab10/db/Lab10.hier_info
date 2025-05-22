@@ -1,0 +1,91 @@
+|Lab10
+sw[0] => oitoparaum:placa.a[0]
+sw[1] => oitoparaum:placa.a[1]
+sw[2] => oitoparaum:placa.a[2]
+sw[3] => oitoparaum:placa.a[3]
+sw[4] => oitoparaum:placa.b[0]
+sw[5] => oitoparaum:placa.b[1]
+sw[6] => oitoparaum:placa.b[2]
+sw[7] => oitoparaum:placa.b[3]
+sw[8] => oitoparaum:placa.s[0]
+sw[9] => oitoparaum:placa.s[1]
+sw[10] => oitoparaum:placa.s[2]
+LEDR[0] << oitoparaum:placa.g
+LEDR[1] << <GND>
+
+
+|Lab10|oitoparaum:placa
+a[0] => doisparaum:mux1.a
+a[1] => doisparaum:mux2.a
+a[2] => doisparaum:mux3.a
+a[3] => doisparaum:mux4.a
+b[0] => doisparaum:mux1.b
+b[1] => doisparaum:mux2.b
+b[2] => doisparaum:mux3.b
+b[3] => doisparaum:mux4.b
+s[0] => doisparaum:mux1.s
+s[0] => doisparaum:mux2.s
+s[0] => doisparaum:mux3.s
+s[0] => doisparaum:mux4.s
+s[1] => doisparaum:mux6.s
+s[1] => doisparaum:mux7.s
+s[2] => doisparaum:mux8.s
+g <= doisparaum:mux8.f
+
+
+|Lab10|oitoparaum:placa|doisparaum:mux1
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab10|oitoparaum:placa|doisparaum:mux2
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab10|oitoparaum:placa|doisparaum:mux3
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab10|oitoparaum:placa|doisparaum:mux4
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab10|oitoparaum:placa|doisparaum:mux6
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab10|oitoparaum:placa|doisparaum:mux7
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab10|oitoparaum:placa|doisparaum:mux8
+a => f.IN0
+b => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

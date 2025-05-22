@@ -1,0 +1,14 @@
+|atividade2_2
+D => flipflopS:sincrono.D
+Resetn => flipflopS:sincrono.Resetn
+Clock => flipflopS:sincrono.Clock
+Q <= flipflopS:sincrono.Q
+
+
+|atividade2_2|flipflopS:sincrono
+D => Q.DATAB
+Resetn => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

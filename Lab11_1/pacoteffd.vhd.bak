@@ -1,0 +1,28 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+
+package Pacotedeff is
+
+component late is
+
+port (     D: in std_logic;
+         CLOCK: in std_logic;
+            Q  : out std_logic
+        );
+             
+end component;
+
+component flipflopsubida is
+port( D, Clock: in std_logic;
+      Q       : out std_logic);
+        
+end component;
+
+
+component flipflopdescida is
+port( D, Clock: in std_logic;
+      Q       : out std_logic);
+        
+end component;
+
+end package;

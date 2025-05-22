@@ -1,0 +1,17 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+
+entity flipflopdescidaD is
+port( D, Clock: in std_logic;
+      Q       : out std_logic);
+		
+end flipflopdescidaD;
+
+architecture behavior of flipflopdescidaD is
+begin
+	process
+		begin
+			wait until Clock'event and Clock ='0';
+				Q<=D;
+	end process;
+end behavior;

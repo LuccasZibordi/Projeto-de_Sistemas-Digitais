@@ -1,0 +1,73 @@
+# Reading pref.tcl
+# do atividade2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Users/lucca/Projetos 3 semestre/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11_2/flipflopR.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:50:50 on May 21,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11_2/flipflopR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flipflopR
+# -- Compiling architecture Behavior of flipflopR
+# End time: 15:50:50 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11_2/pacoteffA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:50:51 on May 21,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11_2/pacoteffA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package pacoteffA
+# End time: 15:50:52 on May 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11_2/atividade2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:50:52 on May 21,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab11_2/atividade2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package pacoteffA
+# -- Compiling entity atividade2
+# -- Compiling architecture behavior of atividade2
+# End time: 15:50:52 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.atividade2
+# vsim work.atividade2 
+# Start time: 15:50:57 on May 21,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pacoteffa
+# Loading work.atividade2(behavior)
+# Loading work.flipflopr(behavior)
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 50ps -step 1 -repeat forever -starttime 0ps -endtime 1000ps sim:/atividade2/Clock
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 250ps -step 1 -repeat forever -starttime 0ps -endtime 1000ps sim:/atividade2/Clock
+# /atividade2/Clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 250ps -step 1 -repeat forever -starttime 0ps -endtime 1000ps sim:/atividade2/D
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 500ps -step 1 -repeat forever -starttime 0ps -endtime 1000ps sim:/atividade2/Resetn
+add wave -position end  sim:/atividade2/Q
+run
+restart
+wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps Edit:/atividade2/D
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# End time: 15:56:23 on May 21,2025, Elapsed time: 0:05:26
+# Errors: 0, Warnings: 0

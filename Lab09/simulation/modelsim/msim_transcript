@@ -1,0 +1,86 @@
+# Reading pref.tcl
+# do lab09_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Users/lucca/Projetos 3 semestre/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab09/pacotao.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:42:10 on Apr 30,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab09/pacotao.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package pacotao
+# End time: 13:42:10 on Apr 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab09/lab09.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:42:11 on Apr 30,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab09/lab09.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package pacotao
+# -- Compiling entity lab09
+# -- Compiling architecture comparacao of lab09
+# End time: 13:42:11 on Apr 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab09/comparador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:42:11 on Apr 30,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab09/comparador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity comparador
+# -- Compiling architecture compare of comparador
+# End time: 13:42:11 on Apr 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.comparador
+# vsim work.comparador 
+# Start time: 13:42:35 on Apr 30,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.comparador(compare)
+wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Up -period 50ps -step 1 -repeat 1 -range 3 0 -starttime 0ps -endtime 800ps sim:/comparador/x
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Up -period 50ps -step 1 -repeat 1 -range 3 0 -starttime 0ps -endtime 800ps sim:/comparador/y
+add wave -position end  sim:/comparador/AeqB
+add wave -position end  sim:/comparador/AgtB
+add wave -position end  sim:/comparador/AltB
+run
+restart
+wave create -driver freeze -pattern counter -startvalue 1111 -endvalue 0000 -type Range -direction Up -period 50ps -step 1 -repeat 1 -range 3 0 -starttime 0ps -endtime 800ps sim:/comparador/x
+# In Range Up Counter: Start value cannot be greater than End value
+wave create -driver freeze -pattern counter -startvalue 1111 -endvalue 0000 -type Range -direction Down -period 50ps -step 1 -repeat 1 -range 3 0 -starttime 0ps -endtime 800ps sim:/comparador/x
+wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Up -period 50ps -step 1 -repeat 1 -range 3 0 -starttime 0ps -endtime 800ps sim:/comparador/y
+add wave -position end  sim:/comparador/AeqB
+add wave -position end  sim:/comparador/AgtB
+add wave -position end  sim:/comparador/AltB
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+run
+restart
+wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Up -period 50ps -step 1 -repeat 1 -range 3 0 -starttime 0ps -endtime 800ps sim:/comparador/x
+wave create -driver freeze -pattern counter -startvalue 1111 -endvalue 0000 -type Range -direction Down -period 50ps -step 1 -repeat 1 -range 3 0 -starttime 0ps -endtime 800ps sim:/comparador/y
+add wave -position end  sim:/comparador/AeqB
+add wave -position end  sim:/comparador/AgtB
+add wave -position end  sim:/comparador/AltB
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# End time: 13:59:36 on Apr 30,2025, Elapsed time: 0:17:01
+# Errors: 0, Warnings: 0
+wave editwrite -file {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab09/simulation/modelsim/wave.do}

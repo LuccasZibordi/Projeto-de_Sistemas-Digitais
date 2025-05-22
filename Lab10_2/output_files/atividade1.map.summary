@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed May 14 14:30:03 2025
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : atividade1
+Top-level Entity Name : atividade1
+Family : Cyclone IV E
+Total logic elements : 21
+    Total combinational functions : 21
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

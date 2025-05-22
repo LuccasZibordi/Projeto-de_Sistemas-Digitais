@@ -1,0 +1,34 @@
+	library ieee;
+	use ieee.std_logic_1164.all;
+	use work.all;
+	
+Entity Lab07 is
+	port( 
+	SW: in std_logic_vector (8 downto 0);
+	HEX0:out std_logic_vector (6 downto 0);
+	HEX1:out std_logic_vector (6 downto 0);
+	HEX3:out std_logic_vector (6 downto 0);
+	HEX5:out std_logic_vector (6 downto 0);
+	HEX7:out std_logic_vector (6 downto 0)
+	);
+	end Lab07;
+	
+Architecture Somadores of Lab07 is
+	signal Cout: std_logic;
+	signal soma: std_logic_vector ( 3 downto 0);
+	signal a: std_logic_vector ( 3 downto 0);
+	signal b: std_logic_vector ( 3 downto 0);
+	signal c: std_logic_vector ( 4 downto 1);
+	
+	begin
+		soma(0)<= (SW(0) XOR SW(1) XOR SW(5));
+		c(1)<= ( (SW(0) AND SW(1))OR(SW(5) AND ( SW(0) XOR SW(1)));
+		
+		soma(0)<= (c(1) XOR SW(2) XOR SW(6));
+		c(2)<= ( (c(1) AND SW(2))OR(SW(6) AND ( c(1) XOR SW(2)));
+		
+		soma(0)<= (c(2) XOR SW(3) XOR SW(7));
+		c(3)<= ( (c(2) AND SW(3))OR(SW(7) AND ( c(2) XOR SW(3)));
+		
+		soma(0)<= (c(3) XOR SW(4) XOR SW(8));
+		c(4)<= ( (c(3) AND SW(4))OR(SW(8) AND ( c(3) XOR SW(4)));

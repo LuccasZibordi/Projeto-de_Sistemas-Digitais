@@ -1,0 +1,200 @@
+# Reading pref.tcl
+# do projeto1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Users/lucca/Projetos 3 semestre/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/pacotao.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:44:13 on May 20,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/pacotao.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package pacotao
+# End time: 16:44:13 on May 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somap.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:44:14 on May 20,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somap.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity completo
+# -- Compiling architecture funcionamento of completo
+# End time: 16:44:14 on May 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/multiplicador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:44:14 on May 20,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/multiplicador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package pacotao
+# -- Compiling entity mult
+# -- Compiling architecture multiplica of mult
+# End time: 16:44:14 on May 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/projeto1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:44:14 on May 20,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/projeto1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package pacotao
+# -- Compiling entity projeto1
+# -- Compiling architecture ALU of projeto1
+# End time: 16:44:14 on May 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somador4bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:44:14 on May 20,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/somador4bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity somador4
+# -- Compiling architecture soma of somador4
+# End time: 16:44:14 on May 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/comparador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:44:14 on May 20,2025
+# vcom -reportprogress 300 -2008 -work work C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/PROJETO_1/comparador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity comparador
+# -- Compiling architecture compare of comparador
+# End time: 16:44:14 on May 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.comparador
+# vsim work.comparador 
+# Start time: 16:44:30 on May 20,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.comparador(compare)
+wave create -driver freeze -pattern constant -value 1111 -range 3 0 -starttime 0ps -endtime 500ps sim:/comparador/x
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern constant -value 1111 -range 3 0 -starttime 0ps -endtime 500ps sim:/comparador/y
+add wave -position end  sim:/comparador/AeqB
+run
+add wave -position end  sim:/comparador/AgtB
+add wave -position end  sim:/comparador/AltB
+run
+restart
+wave modify -driver freeze -pattern constant -value 0000 -range 3 0 -starttime 500ps -endtime 1000ps Edit:/comparador/x
+wave modify -driver freeze -pattern constant -value 1111 -range 3 0 -starttime 500ps -endtime 1000ps Edit:/comparador/y
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+restart
+wave modify -driver freeze -pattern constant -value 0000 -range 3 0 -starttime 1000ps -endtime 1500ps Edit:/comparador/y
+wave modify -driver freeze -pattern constant -value 1111 -range 3 0 -starttime 1000ps -endtime 1500ps Edit:/comparador/x
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+vsim work.completo
+# End time: 16:49:29 on May 20,2025, Elapsed time: 0:04:59
+# Errors: 0, Warnings: 0
+# vsim work.completo 
+# Start time: 16:49:30 on May 20,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.completo(funcionamento)
+vsim work.somador4
+# End time: 16:49:41 on May 20,2025, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0
+# vsim work.somador4 
+# Start time: 16:49:41 on May 20,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.somador4(soma)
+wave create -driver freeze -pattern constant -value 0010 -range 3 0 -starttime 0ps -endtime 1000ps sim:/somador4/a
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# completo
+wave create -driver freeze -pattern constant -value 0010 -range 3 0 -starttime 0ps -endtime 1000ps sim:/somador4/b
+# completo
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/somador4/cin
+# completo
+add wave -position 0 -format Logic -height 17 -label {CARRY IN} -editable 2 Edit:/somador4/cin
+add wave -position end  sim:/somador4/soma
+add wave -position end  sim:/somador4/cout
+add wave -position end  sim:/somador4/overflow
+add wave -position end  sim:/somador4/zero
+run
+restart
+wave modify -driver freeze -pattern constant -value 1101 -range 3 0 -starttime 0ps -endtime 1000ps Edit:/somador4/b
+# completo
+wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps Edit:/somador4/cin
+# completo
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+vsim work.mult
+# End time: 16:55:01 on May 20,2025, Elapsed time: 0:05:20
+# Errors: 0, Warnings: 0
+# vsim work.mult 
+# Start time: 16:55:01 on May 20,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pacotao
+# Loading work.mult(multiplica)
+# Loading work.completo(funcionamento)
+wave create -driver freeze -pattern constant -value 10 -range 1 0 -starttime 0ps -endtime 1000ps sim:/mult/a
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# somador4
+wave create -driver freeze -pattern constant -value 11 -range 1 0 -starttime 0ps -endtime 1000ps sim:/mult/b
+# somador4
+add wave -position end  sim:/mult/overflow
+add wave -position end  sim:/mult/produto
+add wave -position end  sim:/mult/zero
+run
+vsim work.projeto1
+# End time: 16:57:37 on May 20,2025, Elapsed time: 0:02:36
+# Errors: 0, Warnings: 0
+# vsim work.projeto1 
+# Start time: 16:57:37 on May 20,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pacotao
+# Loading work.projeto1(alu)
+# Loading work.somador4(soma)
+# Loading work.mult(multiplica)
+# Loading work.completo(funcionamento)
+# Loading work.comparador(compare)
+wave create -driver freeze -pattern constant -value 00010010001 -range 10 0 -starttime 0ps -endtime 500ps sim:/projeto1/sw
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# mult
+add wave -position end  sim:/projeto1/HEX6
+wave modify -driver freeze -pattern constant -value 00010010010 -range 10 0 -starttime 500ps -endtime 1000ps Edit:/projeto1/sw
+# mult
+wave modify -driver freeze -pattern constant -value 00010010011 -range 10 0 -starttime 1000ps -endtime 1500ps Edit:/projeto1/sw
+# mult
+run
+add wave -position end  sim:/projeto1/LEDR
+restart
+run
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# End time: 17:04:37 on May 20,2025, Elapsed time: 0:07:00
+# Errors: 0, Warnings: 0

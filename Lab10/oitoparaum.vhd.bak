@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.pakote.all;
+
+entity oitoparaum is
+	port( a,b : in std_logic_vector (3 downto 0);
+	        s : in std_logic_vector (2 downto 0);
+			  g : out std_logic
+		  );
+end oitoparaum;
+
+architecture m_U_x of oitoparaum is
+   signal i: std_logic_vector (3 downto 0);
+	signal q: std_logic_vector (1 downto 0);
+	
+begin
+
+	--primeira coluna--
+	mux1: doisparaum port map (a(0),b(0),s(0),i(0));
+	mux2: doisparaum port map (a(1),b(1),s(0),i(1));
+	mux3: doisparaum port map (a(2),b(2),s(0),i(2));
+	mux4: doisparaum port map (a(3),b(3),s(0),i(3));

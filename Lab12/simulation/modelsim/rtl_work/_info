@@ -1,0 +1,117 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/simulation/modelsim
+Pbackpack
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+w1748288495
+R0
+8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/backpack.vhd
+FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/backpack.vhd
+l0
+L4 1
+VT;B`LS[P[HnMKNh:ImNQ30
+!s100 <?U=@ilPgdoF`8B85^QQ61
+Z3 OV;C;2020.1;71
+31
+Z4 !s110 1748288821
+!i10b 1
+Z5 !s108 1748288821.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/backpack.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/backpack.vhd|
+!i113 1
+Z6 o-93 -work work
+Z7 tExplicit 1 CvgOpt 0
+Elab12
+Z8 w1748288795
+Z9 DPx4 work 8 backpack 0 22 T;B`LS[P[HnMKNh:ImNQ30
+R1
+R2
+!i122 2
+R0
+Z10 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/Lab12.vhd
+Z11 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/Lab12.vhd
+l0
+L5 1
+VnJ=6bZX[ZWL1KgRARjQAM1
+!s100 aDlT4SdB@9=GSe]R[cZoW1
+R3
+31
+R4
+!i10b 1
+R5
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/Lab12.vhd|
+!s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/Lab12.vhd|
+!i113 1
+R6
+R7
+Aflipflop
+R9
+R1
+R2
+DEx4 work 5 lab12 0 22 nJ=6bZX[ZWL1KgRARjQAM1
+!i122 2
+l17
+L15 10
+VVg]]=YQ2A=;ZVYXfd8[bY3
+!s100 S@keMB7V7mOeS;N6N2iBG3
+R3
+31
+R4
+!i10b 1
+R5
+R12
+Z13 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/Lab12.vhd|
+!i113 1
+R6
+R7
+Emuxdff
+Z14 w1748287580
+R1
+R2
+!i122 0
+R0
+Z15 8C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/muxdff.vhd
+Z16 FC:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/muxdff.vhd
+l0
+L4 1
+Vg@jNc4R;amXP>AV[U^EIm2
+!s100 UmEOBMLgOfZZQ1BT`BW8z1
+R3
+31
+R4
+!i10b 1
+R5
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/muxdff.vhd|
+Z18 !s107 C:/Users/lucca/Projetos 3 semestre/projetos_Quartus/Lab12/muxdff.vhd|
+!i113 1
+R6
+R7
+Abehavior
+R1
+R2
+DEx4 work 6 muxdff 0 22 g@jNc4R;amXP>AV[U^EIm2
+!i122 0
+l13
+L12 14
+V371fj=DUHQbH^NgU^D@D23
+!s100 [nj]Sje4[^jH[>^>jRz1K0
+R3
+31
+R4
+!i10b 1
+R5
+R17
+R18
+!i113 1
+R6
+R7

@@ -1,0 +1,15 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+
+package backpack is
+
+component muxdff IS
+PORT ( 
+
+D0, D1, Sel, Clock : IN STD_LOGIC ;
+Q : OUT STD_LOGIC ) ;
+
+END component;
+
+
+END package;

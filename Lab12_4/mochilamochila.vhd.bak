@@ -1,0 +1,14 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+
+package mochilamochila is
+
+component upcount IS
+ PORT ( 
+			R : IN INTEGER RANGE 0 TO 15 ;
+			Clock, Resetn, L : IN STD_LOGIC ;
+			Q : BUFFER INTEGER RANGE 0 TO 15 
+		) ;
+END component ;
+
+end package;

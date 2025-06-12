@@ -1,0 +1,17 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+use work.mochilamochila.all;
+
+entity Lab12_4 is
+port(  SW: in std_logic_vector ( 5 downto 0);
+		KEY: in std_logic_vector ( 2 downto 0);
+	  HEX0: in std_logic_vector ( 6 downto 0)
+	  );
+end Lab12_4;
+
+architecture tacanaplaca of Lab12_4 is
+
+signal QUE: std_logic_vector (6 downto 0);
+
+begin
+boratomaruma: upcount port map (Sw(3 downto 0), KEY(0), KEY(1), KEY(2), QUE);

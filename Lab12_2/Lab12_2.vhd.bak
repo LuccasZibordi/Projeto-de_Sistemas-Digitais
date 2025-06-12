@@ -1,0 +1,20 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+use work.mochila.all;
+
+entity Lab12_2 is
+port (
+			SW: in std_logic_vector ( 5 downto 0);
+			KEY: in std_logic_vector (1 downto 0);
+			HEX0: out std_logic_vector ( 6 downto 0);
+			HEX2: out std_logic_vector ( 6 downto 0)
+		);
+end Lab12_2
+
+architecture registrador of Lab12_2 is
+
+signal Q: std_logic_vector (3 downto 0);
+
+begin
+
+instanciamento: shift4 port map (SW (3 downto 0), KEY(1), SW(5), KEY(0),

@@ -1,0 +1,42 @@
+|Lab12_4
+SW[0] => upcount:seilakk.R[0]
+SW[1] => upcount:seilakk.R[1]
+SW[2] => upcount:seilakk.R[2]
+SW[3] => upcount:seilakk.R[3]
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+KEY[0] => upcount:seilakk.Clock
+KEY[1] => upcount:seilakk.Resetn
+KEY[2] => upcount:seilakk.L
+HEX0[6] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab12_4|upcount:seilakk
+R[0] => Q.DATAB
+R[1] => Q.DATAB
+R[2] => Q.DATAB
+R[3] => Q.DATAB
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Resetn => Q[0]~reg0.ACLR
+Resetn => Q[1]~reg0.ACLR
+Resetn => Q[2]~reg0.ACLR
+Resetn => Q[3]~reg0.ACLR
+L => Q.OUTPUTSELECT
+L => Q.OUTPUTSELECT
+L => Q.OUTPUTSELECT
+L => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

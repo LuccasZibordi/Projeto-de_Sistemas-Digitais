@@ -1,0 +1,18 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+USE ieee.std_logic_unsigned.all ;
+use work.wardrobe.all;
+
+entity Lab12_3 is
+port( SW: in std_logic_vector ( 5 downto 0 );
+		KEY:in std_logic_vector ( 1 downto 0 );
+		HEX0: out std_logic_vector (6 downto 0)
+	  );
+end Lab12_3;
+
+architecture contador of Lab12_3 is
+signal Q: std_logic_vector(3 downto 0);
+
+begin
+
+calling: upcount port map (KEY(0), KEY(1),SW(0), Q);

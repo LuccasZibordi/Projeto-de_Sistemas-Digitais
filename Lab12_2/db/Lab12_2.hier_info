@@ -1,0 +1,105 @@
+|Lab12_2
+SW[0] => Mux0.IN19
+SW[0] => Mux1.IN19
+SW[0] => Mux2.IN19
+SW[0] => Mux3.IN19
+SW[0] => Mux4.IN19
+SW[0] => Mux5.IN19
+SW[0] => Mux6.IN19
+SW[0] => shift4:instanciamento.R[0]
+SW[1] => Mux0.IN18
+SW[1] => Mux1.IN18
+SW[1] => Mux2.IN18
+SW[1] => Mux3.IN18
+SW[1] => Mux4.IN18
+SW[1] => Mux5.IN18
+SW[1] => Mux6.IN18
+SW[1] => shift4:instanciamento.R[1]
+SW[2] => Mux0.IN17
+SW[2] => Mux1.IN17
+SW[2] => Mux2.IN17
+SW[2] => Mux3.IN17
+SW[2] => Mux4.IN17
+SW[2] => Mux5.IN17
+SW[2] => Mux6.IN17
+SW[2] => shift4:instanciamento.R[2]
+SW[3] => Mux0.IN16
+SW[3] => Mux1.IN16
+SW[3] => Mux2.IN16
+SW[3] => Mux3.IN16
+SW[3] => Mux4.IN16
+SW[3] => Mux5.IN16
+SW[3] => Mux6.IN16
+SW[3] => shift4:instanciamento.R[3]
+SW[4] => ~NO_FANOUT~
+SW[5] => shift4:instanciamento.w
+KEY[0] => shift4:instanciamento.Clock
+KEY[1] => shift4:instanciamento.L
+HEX0[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[6] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[5] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[3] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[2] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[1] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab12_2|shift4:instanciamento
+R[0] => muxdffatv2:Stage0.D1
+R[1] => muxdffatv2:Stage1.D1
+R[2] => muxdffatv2:Stage2.D1
+R[3] => muxdffatv2:Stage3.D1
+L => muxdffatv2:Stage3.Sel
+L => muxdffatv2:Stage2.Sel
+L => muxdffatv2:Stage1.Sel
+L => muxdffatv2:Stage0.Sel
+w => muxdffatv2:Stage3.D0
+Clock => muxdffatv2:Stage3.Clock
+Clock => muxdffatv2:Stage2.Clock
+Clock => muxdffatv2:Stage1.Clock
+Clock => muxdffatv2:Stage0.Clock
+Q[0] <= muxdffatv2:Stage0.Q
+Q[1] <= muxdffatv2:Stage1.Q
+Q[2] <= muxdffatv2:Stage2.Q
+Q[3] <= muxdffatv2:Stage3.Q
+
+
+|Lab12_2|shift4:instanciamento|muxdffatv2:Stage3
+D0 => Q.DATAA
+D1 => Q.DATAB
+Sel => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab12_2|shift4:instanciamento|muxdffatv2:Stage2
+D0 => Q.DATAA
+D1 => Q.DATAB
+Sel => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab12_2|shift4:instanciamento|muxdffatv2:Stage1
+D0 => Q.DATAA
+D1 => Q.DATAB
+Sel => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab12_2|shift4:instanciamento|muxdffatv2:Stage0
+D0 => Q.DATAA
+D1 => Q.DATAB
+Sel => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

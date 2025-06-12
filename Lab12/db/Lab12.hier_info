@@ -1,0 +1,21 @@
+|Lab12
+SW[0] => muxdff:instanciando.D0
+SW[1] => muxdff:instanciando.D1
+SW[1] => LEDR[1].DATAIN
+SW[2] => muxdff:instanciando.Sel
+SW[2] => LEDR[2].DATAIN
+KEY[0] => muxdff:instanciando.Clock
+KEY[1] => ~NO_FANOUT~
+LEDR[0] << muxdff:instanciando.Q
+LEDR[1] << SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << SW[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab12|muxdff:instanciando
+D0 => Q.DATAA
+D1 => Q.DATAB
+Sel => Q.OUTPUTSELECT
+Clock => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
